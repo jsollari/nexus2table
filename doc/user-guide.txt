@@ -1,0 +1,40 @@
+nexus2table v1.1
+
+INTRODUCTION:
+
+This program converts a input file in the popular format nexus to a .len file to be used in the popabc program
+
+authors: Joao Lopes
+workplace: University of Reading
+date: 13th April 2009
+
+Arguments:
+1) input filename (*.nex)
+3) output filename (*.len)
+
+Input files:
+Nexus input file (.nex)
+Output files:
+Table file (.len)
+
+Example:
+nexus2table.exe input/sample.nex output/tablefile
+
+
+USER-GUIDE:
+
+1.Compile the executable files
+First you need to compile the executable by running the Makefile in the base directory. Just type the following instruction in the command line:
+
+make
+
+The executables nexus2table.exe should have been created in the base directory.
+
+If you want to delete the files created by running the Makefile just type in the base directory:
+
+make clean
+
+2. Run the nexus2table.exe
+To convert the sample file provided type the following in the command line:
+
+./nexus2table.exe examples/toysample.nex examples/toytable
